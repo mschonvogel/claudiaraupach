@@ -24,7 +24,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 140%;
 }
 ol, ul {
 	list-style: none;
@@ -46,7 +46,7 @@ table {
 body {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 24px;
-	padding: 5px;
+	padding: 10px;
 }
 
 h1 {
@@ -54,8 +54,8 @@ h1 {
 	margin-bottom: 18px;
 }
 
-i {
-	font-style: italic;
+.blink {
+	text-decoration: none;
 	color: #CCC;
 	-webkit-animation: blink 400ms infinite; /* Safari 4+ */
 	-moz-animation:    blink 400ms infinite; /* Fx 5+ */
@@ -65,7 +65,7 @@ i {
 
 @-webkit-keyframes blink {
 	0%, 49% {
-	    color: #00FFFF;
+	    color: #ff0000;
 	}
 	50%, 100% {
 	    color: #000;
@@ -77,10 +77,32 @@ li {
 }
 
 a, a:visited {
-	text-decoration: none;
+	text-decoration: underline;
 	color: #000;
 }
 
 a:hover {
-	color: #00FFFF;
+	color: #000;
+	text-decoration: none;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	body {
+		padding: 20px;
+		font-size: 28px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	body {
+		padding: 30px;
+		font-size: 36px;
+	}
+}
+
+@media (min-width: 1024px) {
+	body {
+		padding: 40px;
+		font-size: 42px;
+	}  
 }
