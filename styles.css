@@ -36,15 +36,15 @@ body {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 28px;
 	padding: 10px;
+	color: #0A23F3;
 }
 
 a, a:visited {
 	text-decoration: underline;
-	color: #000;
+	color: #0A23F3;
 }
 
 a:hover {
-	color: #000;
 	text-decoration: none;
 }
 
